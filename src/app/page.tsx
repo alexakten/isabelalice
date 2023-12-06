@@ -73,6 +73,7 @@ export default function Home() {
             type="button"
             onClick={toggleTheme}
             style={{ fontFamily: "Garamond", fontStyle: "italic" }}
+            className="text-lg"
           >
             {theme === "light" ? "◖ dark" : "● light"}
           </button>
@@ -132,6 +133,7 @@ export default function Home() {
               type="button"
               onClick={toggleTheme}
               style={{ fontFamily: "Garamond", fontStyle: "italic" }}
+              className="text-lg"
             >
               {theme === "light" ? "◖ dark" : "● light"}
             </button>
