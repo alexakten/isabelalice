@@ -4,6 +4,15 @@ import { useState, useRef, useEffect } from "react";
 import poems from "../data/PoemsData";
 
 export default function Home() {
+  const [theme, setTheme] = useState("dark"); // Default theme is dark
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
   const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
   const currentPoem = poems[currentPoemIndex];
 
@@ -19,17 +28,29 @@ export default function Home() {
 
   return (
     <main
-      style={{ backgroundColor: "#FFFEF4" }}
-      className={
-        "text-red flex h-screen w-screen flex-col justify-between overflow-hidden overflow-y-hidden px-8 py-6"
-      }
+      style={{
+        backgroundColor: theme === "light" ? "#FFFEF4" : "#B80002",
+      }}
+      className={`flex h-screen w-screen flex-col justify-between overflow-hidden overflow-y-hidden px-8 py-6 ${
+        theme === "light" ? "text-red" : "text-light"
+      }`}
     >
-      <nav className="flex items-start justify-between">
+      <nav className="relative flex items-start justify-between">
         <div>
           <h1 className="text-2xl font-semibold tracking-tighter">
             ISABEL ALICE
           </h1>
           <p className="font-medium tracking-tight">Author & Copywriter</p>
+        </div>
+
+        <div className="absolute left-1/2 -translate-x-1/2 transform font-medium md:top-3 md:-translate-y-1/2">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            style={{ fontFamily: "Garamond", fontStyle: "italic" }}
+          >
+            {theme === "light" ? "◖ dark" : "● light"}
+          </button>
         </div>
 
         <div className="flex flex-col items-end gap-2 font-semibold tracking-tight md:flex-row md:items-center md:justify-end md:gap-8">

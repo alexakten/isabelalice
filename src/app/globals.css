@@ -33,6 +33,10 @@ h1 {
   color: #F30D0F;
 }
 
+.text-light {
+  color: #FFFEF4;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
