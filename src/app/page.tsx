@@ -138,7 +138,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-end gap-0">
-          <p className="font-semibold">GET IN TOUCH</p>
+          <p className="font-semibold tracking-tight">GET IN TOUCH</p>
           <div
             className="flex flex-col items-end text-lg"
             style={{ fontFamily: "Garamond", fontStyle: "italic" }}
