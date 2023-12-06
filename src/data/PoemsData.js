@@ -47,6 +47,18 @@ const poems = [
     content:
       "the ocean's embrace, wide and deep, \nholds secrets that the heavens keep, \nits waves tell stories, old and new, \nin shades of emerald and deepest blue.",
   },
+  {
+    id: 9,
+    title: "ocean's lullaby",
+    content:
+      "waves that gently kiss the shore, \nsing a lullaby of yore, \ntheir rhythm, a timeless lore, \nsoothing souls forevermore.",
+  },
+  {
+    id: 10,
+    title: "starry night reverie",
+    content:
+      "under the blanket of a starry night, \nthe world bathes in celestial light, \nand in this grand and silent sight, \nour hearts take flight in dream's delight.",
+  },
 ];
 
 export default poems;
