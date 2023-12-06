@@ -1,29 +1,29 @@
 const poems = [
   {
     id: 1,
-    title: "My Grandfather and Home",
-    content: "My grandfather used to count the days on his fingers, \nMarking the rhythm of seasons and tides, \nIn his eyes, a story of wisdom lingers, \nUnderneath the sky where the seagull glides."
+    title: "my grandfather and home",
+    content: "my grandfather used to count the days on his fingers, \nmarking the rhythm of seasons and tides, \nin his eyes, a story of wisdom lingers, \nunderneath the sky where the seagull glides."
   },
   {
     id: 2,
-    title: "Whispers of the Wind",
-    content: "Whispers of the wind, so soft and slight, \nCarry dreams of day and secrets of night, \nOver hills and valleys, they dance and they bend, \nIn an endless waltz, with the leaves they blend."
+    title: "whispers of the wind",
+    content: "whispers of the wind, so soft and slight, \ncarry dreams of day and secrets of night, \nover hills and valleys, they dance and they bend, \nin an endless waltz, with the leaves they blend."
   },
   {
     id: 3,
-    title: "The Painter's Dream",
-    content: "In the painter's dream, colors dare to fly, \nBlues of oceans deep, yellows of the sky, \nEach stroke tells a tale, bold or demure, \nOn the canvas of life, emotions pure."
+    title: "the painter's dream",
+    content: "in the painter's dream, colors dare to fly, \nblues of oceans deep, yellows of the sky, \neach stroke tells a tale, bold or demure, \non the canvas of life, emotions pure."
   },
   {
     id: 4,
-    title: "Echoes in the Forest",
-    content: "Echoes in the forest, a haunting melody, \nTales of ancient times, and mysteries free, \nTrees stand as guardians of history, \nWhispering secrets, wrapped in mystery."
+    title: "echoes in the forest",
+    content: "echoes in the forest, a haunting melody, \ntales of ancient times, and mysteries free, \ntrees stand as guardians of history, \nwhispering secrets, wrapped in mystery."
   },
   {
     id: 5,
-    title: "River of Time",
-    content: "The river of time flows, relentless and deep, \nCarving paths in the earth, a course it must keep, \nIn its waters, reflections of joy and of strife, \nMirroring the essence of each fleeting life."
-  },
+    title: "river of time",
+    content: "the river of time flows, relentless and deep, \ncarving paths in the earth, a course it must keep, \nin its waters, reflections of joy and of strife, \nmirroring the essence of each fleeting life."
+  }
 ];
 
 export default poems;

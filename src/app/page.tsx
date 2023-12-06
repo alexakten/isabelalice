@@ -13,7 +13,7 @@ export default function Home() {
 
   const goToPreviousPoem = () => {
     setCurrentPoemIndex(
-      (prevIndex) => (prevIndex - 1 + poems.length) % poems.length
+      (prevIndex) => (prevIndex - 1 + poems.length) % poems.length,
     );
   };
 
@@ -21,18 +21,18 @@ export default function Home() {
     <main
       style={{ backgroundColor: "#FFFEF4" }}
       className={
-        "flex text-red flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-8 py-6"
+        "text-red flex h-screen w-screen flex-col justify-between overflow-hidden overflow-y-hidden px-8 py-6"
       }
     >
-      <nav className="flex justify-between items-start">
+      <nav className="flex items-start justify-between">
         <div>
           <h1 className="text-2xl font-semibold tracking-tighter">
-            ( ISABEL ALICE )
+            ISABEL ALICE
           </h1>
-          <p className="tracking-tight font-medium">Author & Copywriter</p>
+          <p className="font-medium tracking-tight">Author & Copywriter</p>
         </div>
 
-        <div className="font-semibold tracking-tight flex flex-col md:flex-row items-end md:items-center md:justify-end gap-2 md:gap-8">
+        <div className="flex flex-col items-end gap-2 font-semibold tracking-tight md:flex-row md:items-center md:justify-end md:gap-8">
           <a
             href=""
             target="_blank"
@@ -42,8 +42,8 @@ export default function Home() {
             <button className="relative" type="button">
               POEMS
             </button>
-            <p className="absolute pl-2 top-0 right-0 text-xs font-normal translate-x-1/2 -translate-y-1/2">
-              {poems.length}
+            <p className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2 pl-4 text-xs font-normal">
+              ({poems.length})
             </p>
           </a>
           <a href="" target="_blank" rel="noopener noreferrer">
@@ -58,13 +58,13 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="absolute top-1/3 right-56">
+      <section className="absolute right-56 top-1/3">
         <div
-          className="flex max-w-md min-w-40 h-72 flex-col justify-between gap-8"
+          className="min-w-40 flex h-72 max-w-sm flex-col justify-between gap-8 text-lg"
           style={{ fontFamily: "Garamond", fontStyle: "italic" }}
         >
-          <div className="flex gap-2 flex-col text-xl">
-            <p className="font-semibold">{currentPoem.title}</p>
+          <div className="flex flex-col gap-2">
+            <p className="text- font-semibold">{currentPoem.title}</p>
             <p>{currentPoem.content}</p>
           </div>
           <div className="flex flex-row justify-between">
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex justify-between items-end">
+      <section className="flex items-end justify-between">
         <div className="">
           <h1
             style={{
@@ -96,11 +96,20 @@ export default function Home() {
             isabel alice
           </h1>
         </div>
-        <div className="flex flex-col gap-0 items-end">
+        <div className="flex flex-col items-end gap-0">
           <p className="font-semibold">GET IN TOUCH</p>
-          <div style={{ fontFamily: "Garamond", fontStyle: "italic" }}>
-            <p className="font-medium">isabel@alice.com</p>
-            <p className="font-medium">+46 709 81 91 19</p>
+          <div
+            className="flex flex-col items-end text-lg"
+            style={{ fontFamily: "Garamond", fontStyle: "italic" }}
+          >
+            <p className="font-medium">
+              <a href="mailto:isabelalice27@icloud.com">
+                isabelalice27@icloud.com
+              </a>
+            </p>
+            <p className="font-medium">
+              <a href="tel:+436644129612">+43 664 412 9612</a>
+            </p>
           </div>
         </div>
       </section>
