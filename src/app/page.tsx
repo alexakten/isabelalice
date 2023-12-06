@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import poems from "../data/PoemsData";
 
 export default function Home() {
-  const [theme, setTheme] = useState("dark"); // Default theme is dark
+  const [theme, setTheme] = useState("light"); // Default theme is light
   const [viewportHeight, setViewportHeight] = useState(0);
 
   useEffect(() => {
