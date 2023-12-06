@@ -120,14 +120,15 @@ export default function Home() {
             className="flex flex-col items-end text-lg"
             style={{ fontFamily: "Garamond", fontStyle: "italic" }}
           >
-            <p className="font-medium">
-              <a href="mailto:isabelalice27@icloud.com">
-                isabelalice27@icloud.com
-              </a>
-            </p>
-            <p className="font-medium">
+             <p className="font-medium">
               <a href="tel:+436644129612">+43 664 412 9612</a>
             </p>
+            <p className="font-medium">
+              <a href="mailto:isabelalice27@icloud.com">
+                isabelalice@icloud.com
+              </a>
+            </p>
+           
           </div>
         </div>
       </section>
