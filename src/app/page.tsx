@@ -40,7 +40,7 @@ export default function Home() {
           <h1 className="text-2xl font-semibold tracking-tighter">
             ISABEL ALICE
           </h1>
-          <p className="font-medium tracking-tight">Author & Copywriter</p>
+          <p className="font-normal text-s tracking-tight">Author & Copywriter</p>
         </div>
 
         <div className="absolute left-1/2 -translate-x-1/2 transform font-medium md:top-3 md:-translate-y-1/2">
@@ -73,9 +73,6 @@ export default function Home() {
           <a href="">
             <button type="button">ABOUT</button>
           </a>
-          {/* <a href="tel:+46709136514">
-            <button type="button">tel</button>
-          </a> */}
         </div>
       </nav>
 
