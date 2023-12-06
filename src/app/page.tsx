@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main
-      style={{ backgroundColor: "#FFFDE4" }}
+      style={{ backgroundColor: "#FFFEF4" }}
       className={
         "flex text-red flex-col justify-between w-screen h-screen overflow-hidden overflow-y-hidden px-8 py-6"
       }
