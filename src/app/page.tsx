@@ -5,6 +5,28 @@ import poems from "../data/PoemsData";
 
 export default function Home() {
   const [theme, setTheme] = useState("dark"); // Default theme is dark
+  const [viewportHeight, setViewportHeight] = useState(0);
+
+  useEffect(() => {
+    const setVH = () => {
+      setViewportHeight(window.innerHeight);
+    };
+
+    setVH();
+
+    window.addEventListener("resize", setVH);
+    return () => window.removeEventListener("resize", setVH);
+  }, []);
+
+  useEffect(() => {
+    const preventDefault = (e: TouchEvent) => e.preventDefault();
+
+    document.addEventListener("touchmove", preventDefault, { passive: false });
+
+    return () => {
+      document.removeEventListener("touchmove", preventDefault);
+    };
+  }, []);
 
   const toggleTheme = () => {
     if (theme === "light") {
@@ -30,6 +52,7 @@ export default function Home() {
     <main
       style={{
         backgroundColor: theme === "light" ? "#FFFEF4" : "#B80002",
+        height: `${viewportHeight}px`,
       }}
       className={`flex h-screen w-screen flex-col justify-between overflow-hidden overflow-y-hidden px-8 py-6 ${
         theme === "light" ? "text-red" : "text-light"
@@ -45,7 +68,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="hidden sm:flex sm:absolute left-1/2 -translate-x-1/2 transform font-medium top-3 -translate-y-1/2">
+        <div className="left-1/2 top-3 hidden -translate-x-1/2 -translate-y-1/2 transform font-medium sm:absolute sm:flex">
           <button
             type="button"
             onClick={toggleTheme}
@@ -103,16 +126,16 @@ export default function Home() {
 
       <section className="flex items-end justify-between">
         <div className="">
-          <h1 className="hidden sm:flex responsive-title">isabel alice</h1>
-          <div className="flex sm:hidden font-medium">
-          <button
-            type="button"
-            onClick={toggleTheme}
-            style={{ fontFamily: "Garamond", fontStyle: "italic" }}
-          >
-            {theme === "light" ? "◖ dark" : "● light"}
-          </button>
-        </div>
+          <h1 className="responsive-title hidden sm:flex">isabel alice</h1>
+          <div className="flex font-medium sm:hidden">
+            <button
+              type="button"
+              onClick={toggleTheme}
+              style={{ fontFamily: "Garamond", fontStyle: "italic" }}
+            >
+              {theme === "light" ? "◖ dark" : "● light"}
+            </button>
+          </div>
         </div>
         <div className="flex flex-col items-end gap-0">
           <p className="font-semibold">GET IN TOUCH</p>
