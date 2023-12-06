@@ -78,7 +78,7 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="flex flex-col items-end gap-2 font-semibold tracking-tight md:flex-row md:items-center md:justify-end md:gap-8">
+        <div className="flex flex-col items-end gap-2 font-semibold md:flex-row md:items-center md:justify-end md:gap-8">
           <a
             href=""
             target="_blank"
@@ -88,7 +88,7 @@ export default function Home() {
             <button className="relative" type="button">
               POEMS
             </button>
-            <p className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2 pl-4 text-xs font-normal">
+            <p className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2 pl-5 text-xs font-normal">
               ({poems.length})
             </p>
           </a>
@@ -138,7 +138,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-end gap-0">
-          <p className="font-semibold tracking-tight">GET IN TOUCH</p>
+          <p className="font-semibold">GET IN TOUCH</p>
           <div
             className="flex flex-col items-end text-lg"
             style={{ fontFamily: "Garamond", fontStyle: "italic" }}
