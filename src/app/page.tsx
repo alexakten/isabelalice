@@ -40,10 +40,12 @@ export default function Home() {
           <h1 className="text-2xl font-semibold tracking-tighter">
             ISABEL ALICE
           </h1>
-          <p className="font-normal text-s tracking-tight">Author & Copywriter</p>
+          <p className="text-s font-normal tracking-tight">
+            Author & Copywriter
+          </p>
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 transform font-medium md:top-3 md:-translate-y-1/2">
+        <div className="hidden sm:flex sm:absolute left-1/2 -translate-x-1/2 transform font-medium top-3 -translate-y-1/2">
           <button
             type="button"
             onClick={toggleTheme}
@@ -76,7 +78,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="absolute right-56 top-1/3">
+      <section className="flex justify-center sm:mr-40 sm:justify-end">
         <div
           className="min-w-40 flex h-72 max-w-sm flex-col justify-between gap-8 text-lg"
           style={{ fontFamily: "Garamond", fontStyle: "italic" }}
@@ -101,18 +103,16 @@ export default function Home() {
 
       <section className="flex items-end justify-between">
         <div className="">
-          <h1
-            style={{
-              margin: 0,
-              fontSize: "14rem",
-              lineHeight: 0.75,
-              fontFamily: "Garamond",
-              fontStyle: "italic",
-              letterSpacing: "-0.5rem",
-            }}
+          <h1 className="hidden sm:flex responsive-title">isabel alice</h1>
+          <div className="flex sm:hidden font-medium">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            style={{ fontFamily: "Garamond", fontStyle: "italic" }}
           >
-            isabel alice
-          </h1>
+            {theme === "light" ? "◖ dark" : "● light"}
+          </button>
+        </div>
         </div>
         <div className="flex flex-col items-end gap-0">
           <p className="font-semibold">GET IN TOUCH</p>
@@ -120,7 +120,7 @@ export default function Home() {
             className="flex flex-col items-end text-lg"
             style={{ fontFamily: "Garamond", fontStyle: "italic" }}
           >
-             <p className="font-medium">
+            <p className="font-medium">
               <a href="tel:+436644129612">+43 664 412 9612</a>
             </p>
             <p className="font-medium">
@@ -128,7 +128,6 @@ export default function Home() {
                 isabelalice@icloud.com
               </a>
             </p>
-           
           </div>
         </div>
       </section>

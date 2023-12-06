@@ -37,6 +37,15 @@ h1 {
   color: #FFFEF4;
 }
 
+.responsive-title {
+  margin: 0;
+  font-size: clamp(6rem, 16vw, 14rem);
+  line-height: 0.75;
+  font-family: Garamond;
+  font-style: italic;
+  letter-spacing: -0.5rem;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
