@@ -2,39 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-h1 {
-  padding: 0;
-  margin: 0;
-}
-
 @font-face {
   font-family: 'Garamond';
   src: url('///AGaramondPro-Italic.woff') format('truetype');
   font-display: swap;
   font-weight: 400; /* normal */
   font-style: normal;
-}
-
-.text-red {
-  color: #F30D0F;
-}
-
-.text-light {
-  color: #FFFEF4;
 }
 
 .responsive-title {
@@ -46,12 +19,18 @@ h1 {
   letter-spacing: -0.5rem;
 }
 
+:root {
+  --background-color: #FFFEF4; /* Light theme background color */
+  --text-color: #F30D0F;           /* Light theme text color */
+}
+
+/* Styles for dark theme */
+[data-theme="dark"] {
+  --background-color: #B80002; /* Dark theme background color */
+  --text-color: white;         /* Dark theme text color */
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
