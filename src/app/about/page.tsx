@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <main className="flex h-screen flex-col items-end justify-center overflow-hidden overflow-y-hidden px-8 py-6">
-      <section className="flex flex-col items-end justify-between gap-12 md:flex-row lg:items-end">
+      <section className="flex flex-col items-end justify-between gap-4 md:gap-12 md:flex-row lg:items-end">
         <div className=" flex w-40 md:w-72">
           <Image
             src="/photo-1583599499601-6ace8c41b622.avif" // Replace with the path to your image
