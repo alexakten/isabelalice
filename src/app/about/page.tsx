@@ -28,10 +28,10 @@ export default function About() {
   }, []);
   return (
     <main
-      className="flex h-screen w-screen flex-col items-end justify-center overflow-hidden overflow-y-hidden px-8 py-6"
+      className="flex h-screen w-screen flex-col pt-28 md:pt-0 items-start justify-center overflow-hidden overflow-y-hidden px-8 py-6 sm:items-end"
       style={{ userSelect: "none", height: `${viewportHeight}px` }}
     >
-      <section className="flex flex-col items-start justify-between gap-4 md:flex-row md:gap-12 lg:items-end">
+      <section className="flex flex-col items-start justify-end gap-4 md:flex-row md:items-end md:gap-12">
         <div className=" flex w-28 md:w-72">
           <Image
             src="/photo-1583599499601-6ace8c41b622.avif" // Replace with the path to your image
