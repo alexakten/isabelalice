@@ -2,7 +2,11 @@
 
 import ThemeSwitcher from "../../ThemeSwitcher";
 
-export default function Footer({ showLogo = true }) {
+interface FooterProps {
+  showLogo?: boolean;
+}
+
+export default function Footer({ showLogo }: FooterProps) {
   return (
     <section className="fixed bottom-0 left-0 z-10 flex w-screen items-end justify-between px-8 py-6">
       <div className="">

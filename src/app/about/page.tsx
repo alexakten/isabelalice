@@ -36,7 +36,7 @@ export default function About() {
           </h1>
         </div>
       </section>
-      <Footer showLogo={false} />
+      <Footer showLogo={true} />
     </main>
   );
 }
