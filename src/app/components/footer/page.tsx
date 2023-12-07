@@ -9,7 +9,7 @@ interface FooterProps {
   showLogo?: boolean;
 }
 
-export default function Footer({ showLogo = true }) {
+export default function Footer({ showLogo = true }: FooterProps) {
   const { theme, setTheme, resolvedTheme } = useTheme();
 
   // Use 'resolvedTheme' for the actual theme value
