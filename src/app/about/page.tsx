@@ -1,11 +1,36 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
 import Footer from "../components/footer/Footer";
 import Image from "next/image";
 
 export default function About() {
+  const [viewportHeight, setViewportHeight] = useState(855);
+  useEffect(() => {
+    const setVH = () => {
+      setViewportHeight(window.innerHeight);
+    };
+
+    setVH();
+
+    window.addEventListener("resize", setVH);
+    return () => window.removeEventListener("resize", setVH);
+  }, []);
+
+  useEffect(() => {
+    const preventDefault = (e: TouchEvent) => e.preventDefault();
+
+    document.addEventListener("touchmove", preventDefault, { passive: false });
+
+    return () => {
+      document.removeEventListener("touchmove", preventDefault);
+    };
+  }, []);
   return (
-    <main className="flex h-screen flex-col items-start justify-center overflow-hidden overflow-y-hidden px-8 py-6">
+    <main
+      className="flex h-screen w-screen flex-col items-end justify-center overflow-hidden overflow-y-hidden px-8 py-6"
+      style={{ userSelect: "none", height: `${viewportHeight}px` }}
+    >
       <section className="flex flex-col items-start justify-between gap-4 md:flex-row md:gap-12 lg:items-end">
         <div className=" flex w-28 md:w-72">
           <Image
