@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 
 import { useState, useRef, useEffect } from "react";
-import Footer from "./components/footer/page";
+import Footer from "./components/footer/Footer";
 import Poems from "./components/poems/page";
 import { useTheme } from "next-themes";
 

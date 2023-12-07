@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "../components/footer/page";
+import Footer from "../components/footer/Footer";
 import Image from "next/image";
 
 export default function About() {
