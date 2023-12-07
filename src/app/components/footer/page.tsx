@@ -5,6 +5,10 @@ import { useTheme } from "next-themes";
 import poems from "../../../data/PoemsData";
 import ThemeSwitcher from "../../ThemeSwitcher";
 
+interface FooterProps {
+  showLogo?: boolean;
+}
+
 export default function Footer({ showLogo = true }) {
   const { theme, setTheme, resolvedTheme } = useTheme();
 
