@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function About() {
   return (
     <main className="flex h-screen flex-col items-end justify-center overflow-hidden overflow-y-hidden px-8 py-6">
-      <section className="flex flex-col items-end justify-between gap-4 md:gap-12 md:flex-row lg:items-end">
-        <div className=" flex w-40 md:w-72">
+      <section className="flex flex-col items-start justify-between gap-4 md:flex-row md:gap-12 lg:items-end">
+        <div className=" flex w-28 md:w-72">
           <Image
             src="/photo-1583599499601-6ace8c41b622.avif" // Replace with the path to your image
             alt="Descriptive text about the image"
@@ -25,14 +25,11 @@ export default function About() {
             <br />
             <span style={{ paddingLeft: 105 }}>i’m an author</span>
             <br /> &amp; copywriter based <br />
-            in <br />
-            vienna, austria.
+            in vienna, austria. i write poems
             <br />
-            i write poems and i am
+            & i am
             <br />
-            <span style={{ paddingLeft: 105 }}>
-              currently working on a book.{" "}
-            </span>
+            currently working on a book.{" "}
           </h1>
         </div>
       </section>
