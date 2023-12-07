@@ -1,27 +1,18 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { useTheme } from "next-themes";
-import poems from "../../../data/PoemsData";
 import ThemeSwitcher from "../../ThemeSwitcher";
 
 interface FooterProps {
   showLogo?: boolean;
 }
 
-export default function Footer({ showLogo = true }: FooterProps) {
-  const { theme, setTheme, resolvedTheme } = useTheme();
-
-  // Use 'resolvedTheme' for the actual theme value
-  const currentTheme = resolvedTheme || theme;
-
-  const toggleTheme = () => {
-    setTheme(currentTheme === "light" ? "dark" : "light");
-  };
+const Footer: React.FC<FooterProps> = ({ showLogo = true }) => {
   return (
     <section className="fixed bottom-0 left-0 z-10 flex w-screen items-end justify-between px-8 py-6">
       <div className="">
-      {showLogo && <h1 className="responsive-title hidden sm:flex">isabel alice</h1>}
+        {showLogo && (
+          <h1 className="responsive-title hidden sm:flex">isabel alice</h1>
+        )}
         <div className="flex font-medium sm:hidden">
           <ThemeSwitcher />
         </div>
@@ -36,10 +27,14 @@ export default function Footer({ showLogo = true }: FooterProps) {
             <a href="tel:+436644129612">+43 664 412 9612</a>
           </p>
           <p className="font-medium">
-            <a href="mailto:isabelalice27@icloud.com">isabelalice@icloud.com</a>
+            <a href="mailto:isabelalice27@icloud.com">
+              isabelalice27@icloud.com
+            </a>
           </p>
         </div>
       </div>
     </section>
   );
 }
+export default Footer;
+
