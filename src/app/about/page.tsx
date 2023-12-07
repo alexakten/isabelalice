@@ -17,7 +17,7 @@ export default function About() {
           />
         </div>
         <div
-          className="min-w-40 flex h-72 max-w-sm flex-col items-start justify-start gap-8 text-2xl sm:mr-40"
+          className="min-w-40 flex h-72 max-w-sm flex-col items-start justify-start gap-8 text-lg sm:mr-40"
           style={{ fontFamily: "Garamond", fontStyle: "italic" }}
         >
           <h1>
