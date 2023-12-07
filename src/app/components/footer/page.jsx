@@ -2,11 +2,7 @@
 
 import ThemeSwitcher from "../../ThemeSwitcher";
 
-interface FooterProps {
-  showLogo?: boolean;
-}
-
-const Footer: React.FC<FooterProps> = ({ showLogo = true }) => {
+export default function Footer({ showLogo = true }) {
   return (
     <section className="fixed bottom-0 left-0 z-10 flex w-screen items-end justify-between px-8 py-6">
       <div className="">
@@ -36,5 +32,3 @@ const Footer: React.FC<FooterProps> = ({ showLogo = true }) => {
     </section>
   );
 }
-export default Footer;
-
