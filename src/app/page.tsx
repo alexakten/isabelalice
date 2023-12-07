@@ -8,7 +8,7 @@ import Poems from "./components/poems/Poems";
 import { useTheme } from "next-themes";
 
 export default function Home() {
-  const [viewportHeight, setViewportHeight] = useState(0);
+  const [viewportHeight, setViewportHeight] = useState(855);
   useEffect(() => {
     const setVH = () => {
       setViewportHeight(window.innerHeight);
@@ -18,6 +18,16 @@ export default function Home() {
 
     window.addEventListener("resize", setVH);
     return () => window.removeEventListener("resize", setVH);
+  }, []);
+
+  useEffect(() => {
+    const preventDefault = (e: TouchEvent) => e.preventDefault();
+
+    document.addEventListener("touchmove", preventDefault, { passive: false });
+
+    return () => {
+      document.removeEventListener("touchmove", preventDefault);
+    };
   }, []);
 
   return (
