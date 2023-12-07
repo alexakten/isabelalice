@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="flex h-screen flex-col items-end justify-center overflow-hidden overflow-y-hidden px-8 py-6">
+    <main className="flex h-screen flex-col items-start justify-center overflow-hidden overflow-y-hidden px-8 py-6">
       <section className="flex flex-col items-start justify-between gap-4 md:flex-row md:gap-12 lg:items-end">
         <div className=" flex w-28 md:w-72">
           <Image
