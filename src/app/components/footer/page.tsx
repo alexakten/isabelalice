@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 import poems from "../../../data/PoemsData";
 import ThemeSwitcher from "../../ThemeSwitcher";
 
-export default function Footer() {
+export default function Footer({ showLogo = true }) {
   const { theme, setTheme, resolvedTheme } = useTheme();
 
   // Use 'resolvedTheme' for the actual theme value
@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <section className="fixed bottom-0 left-0 z-10 flex w-screen items-end justify-between px-8 py-6">
       <div className="">
-        <h1 className="responsive-title hidden sm:flex">isabel alice</h1>
+      {showLogo && <h1 className="responsive-title hidden sm:flex">isabel alice</h1>}
         <div className="flex font-medium sm:hidden">
           <ThemeSwitcher />
         </div>
