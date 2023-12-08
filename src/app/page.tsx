@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { useState, useRef, useEffect } from "react";
 import Footer from "./components/footer/Footer";
 import Poems from "./components/poems/Poems";
-import { useTheme } from "next-themes";
+
 
 export default function Home() {
   const [viewportHeight, setViewportHeight] = useState(855);

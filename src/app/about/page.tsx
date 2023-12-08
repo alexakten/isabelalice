@@ -35,7 +35,7 @@ export default function About() {
         <div className=" flex w-28 md:w-72">
           <Image
             src="/photo-1583599499601-6ace8c41b622.avif" // Replace with the path to your image
-            alt="Descriptive text about the image"
+            alt="Isabel Alice"
             width={2} // Adjust as needed
             height={3} // Adjust as needed
             layout="responsive"
