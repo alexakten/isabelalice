@@ -19,15 +19,20 @@
   letter-spacing: -0.5rem;
 }
 
+/* :root {
+  --background-color: #E9E1D5;
+  --text-color: #141414;          
+} */
+
 :root {
-  --background-color: #FFFEF4; /* Light theme background color */
-  --text-color: #F30D0F;           /* Light theme text color */
+  --background-color: #E9E1D5;
+  --text-color: #F30D0F;           
 }
 
 /* Styles for dark theme */
 [data-theme="dark"] {
-  --background-color: #B80002; /* Dark theme background color */
-  --text-color: white;         /* Dark theme text color */
+  --background-color: #141414; /* Dark theme background color */
+  --text-color: #E9E1D5;         /* Dark theme text color */
 }
 
 body {

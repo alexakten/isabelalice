@@ -20,12 +20,12 @@ export default function Poems() {
   }
 
   return (
-    <main className="flex w-screen flex-col items-end justify-center overflow-hidden overflow-y-hidden px-8 py-6">
-      <section className="flex flex-col justify-center pt-40 sm:mr-40 sm:justify-end">
+    <main className="flex w-screen flex-col items-end justify-center px-8 py-6">
+      <section className="flex flex-col justify-center pt-40 pb-40 sm:mr-40 sm:justify-end">
         {poemData.map((poem) => (
           <div
             key={poem.id}
-            className={`h-72 max-w-sm text-lg ${
+            className={`h-72 max-w-md text-lg ${
               poem.id % 2 === 0 ? "md:mr-0" : "md:mr-0"
             }`}
             style={{ fontFamily: "Garamond", fontStyle: "italic" }}

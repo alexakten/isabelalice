@@ -39,7 +39,7 @@ export default function Poems() {
   return (
     <div
       className={
-        "flex h-72 w-96 max-w-sm flex-col justify-between gap-8 text-lg"
+        "flex h-72 w-96 max-w-md flex-col justify-between gap-8 text-lg"
       }
       style={{ fontFamily: "Garamond", fontStyle: "italic" }}
     >

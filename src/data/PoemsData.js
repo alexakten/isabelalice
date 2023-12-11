@@ -59,6 +59,31 @@ const poems = [
     content:
       "under the blanket of a starry night, \nthe world bathes in celestial light, \nand in this grand and silent sight, \nour hearts take flight in dream's delight.",
   },
+  {
+    id: 11,
+    title: "Wellentanz",
+    content: `
+      Wie das Wasser, die Wellen zärtlich tanzen lässt,
+      hältst du mich in deinem Arm, sanft und fest.
+      Glitzernd, wie ein Spiegel, der die Zeit versteht,
+      reflektiert er uns, ein Bild für die Ewigkeit entsteht.
+
+      Rot und blau, zwei Welten, die sich leise treffen,
+      Kalt und nass, an dir haftend, ein Versprechen.
+      So wie das Wasser, die Wellen zärtlich tanzen lässt,
+      bist du meine Zuflucht, sanft und fest.
+  
+      Im stillen Meer verborgen, ruhen Gefühle tief,
+      nachts höre ich noch leise, wie ich deinen Namen rief.
+      Das Wasser wird uns immer vereinen, uns treiben und tragen,
+      bis ans Ende der Zeit, wenn wir nur noch uns haben.
+  
+      Jeder Blick ins Wasser soll dich zu mir führen,
+      bei jeder Berührung im Blauen sollst du mich spüren.
+      Wie das Wasser, die Wellen zärtlich tanzen lässt,
+      bist du mein Frieden, sanft und fest.
+    `,
+  },
 ];
 
 export default poems;
